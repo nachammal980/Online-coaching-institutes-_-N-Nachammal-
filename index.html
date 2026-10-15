@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Future Online Academy</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7ff;
+    color: #202944;
+    line-height: 1.7;
+}
+
+header {
+    background: linear-gradient(135deg, #101c54, #4338ca);
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+nav {
+    background: #111827;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 12px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #4338ca;
+    border-radius: 6px;
+}
+
+.hero {
+    padding: 65px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: #312e81;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+}
+
+button, .btn {
+    display: inline-block;
+    border: none;
+    background: #4338ca;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+button:hover, .btn:hover {
+    background: #1e1b80;
+}
+
+section {
+    padding: 40px 18px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    color: #312e81;
+    margin-bottom: 22px;
+    font-size: 27px;
+}
+
+section h3 {
+    margin-bottom: 8px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 15px #00000010;
+    border: 1px solid #e4e7f5;
+}
+
+.card h3 {
+    color: #4338ca;
+}
+
+.card p {
+    margin: 8px 0;
+}
+
+.highlight {
+    background: #eef2ff;
+    border-left: 5px solid #4338ca;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+form {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+    max-width: 700px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.question {
+    background: #fff;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 9px;
+    border: 1px solid #ddd;
+}
+
+.question label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.question input {
+    width: auto;
+    margin-right: 8px;
+}
+
+#result {
+    display: none;
+    background: #dcfce7;
+    color: #14532d;
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #101c54;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer a {
+    color: #bfdbfe;
+}
+
+.small {
+    font-size: 13px;
+    color: #64748b;
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    nav a {
+        padding: 7px;
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎓 Bright Future Online Academy</h1>
+    <p>Learn Today | Lead Tomorrow | Build Your Future</p>
+    <p>Quality Education • Online Classes • Skill Development</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#skills">Skills</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#register">Register</a>
+    <a href="#test">Online Test</a>
+    <a href="#results">Results</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>Welcome to Your Digital Learning Journey</h2>
+    <p>
+        Discover new skills, learn programming, improve your technical
+        knowledge and prepare for your academic and professional future
+        through our online learning platform.
+    </p>
+    <a class="btn" href="#courses">Explore Courses</a>
+    <a class="btn" href="#register">Join Our Academy</a>
+</div>
+
+<section id="about">
+    <h2>About Our Online Coaching Institute</h2>
+    <div class="intro">
+        <p>
+            Bright Future Online Academy is a learning platform designed
+            to help students develop programming knowledge, technical
+            skills and confidence through structured educational content.
+        </p>
+        <p>
+            Students can explore courses, register for learning programs,
+            practise multiple-choice questions and check their practice
+            test scores instantly.
+        </p>
+    </div>
+
+    <div class="grid" style="margin-top:25px">
+        <div class="card">
+            <h3>🎯 Our Mission</h3>
+            <p>To make quality digital learning accessible and engaging.</p>
+        </div>
+        <div class="card">
+            <h3>🌟 Our Vision</h3>
+            <p>To encourage lifelong learning and technical excellence.</p>
+        </div>
+        <div class="card">
+            <h3>💡 Our Values</h3>
+            <p>Knowledge, creativity, discipline and continuous improvement.</p>
+        </div>
+    </div>
+</section>
+
+<section id="courses">
+    <h2>Explore Our Online Courses and Learning Programs</h2>
+    <p class="intro">
+        Choose a course based on your interests and begin learning
+        fundamental concepts with structured practice.
+    </p>
+
+    <div class="grid" style="margin-top:25px">
+
+        <div class="card">
+            <h3>🐍 Python Programming</h3>
+            <p>Learn variables, conditions, loops, functions and lists.</p>
+            <p><b>Level:</b> Beginner</p>
+            <p><b>Duration:</b> 8 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>☕ Java Programming</h3>
+            <p>Explore classes, objects, inheritance and OOP concepts.</p>
+            <p><b>Level:</b> Beginner</p>
+            <p><b>Duration:</b> 10 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>💻 C Programming</h3>
+            <p>Understand data types, operators, arrays and functions.</p>
+            <p><b>Level:</b> Beginner</p>
+            <p><b>Duration:</b> 6 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>⚙️ C++ Programming</h3>
+            <p>Study object-oriented programming and basic algorithms.</p>
+            <p><b>Level:</b> Beginner</p>
+            <p><b>Duration:</b> 8 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>🌐 HTML and CSS</h3>
+            <p>Create web pages using HTML elements and CSS styling.</p>
+            <p><b>Level:</b> Beginner</p>
+            <p><b>Duration:</b> 4 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>⚡ JavaScript Development</h3>
+            <p>Learn variables, functions, events and interactive websites.</p>
+            <p><b>Level:</b> Beginner</p>
+            <p><b>Duration:</b> 6 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>🤖 Artificial Intelligence</h3>
+            <p>Explore AI fundamentals, applications and intelligent systems.</p>
+            <p><b>Level:</b> Foundation</p>
+            <p><b>Duration:</b> 8 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>📊 Data Science</h3>
+            <p>Discover data analysis, statistics and data visualisation.</p>
+            <p><b>Level:</b> Foundation</p>
+            <p><b>Duration:</b> 10 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>🧠 Machine Learning</h3>
+            <p>Understand datasets, models, training and predictions.</p>
+            <p><b>Level:</b> Intermediate</p>
+            <p><b>Duration:</b> 10 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>🗄️ Database Management</h3>
+            <p>Study tables, SQL queries and relational databases.</p>
+            <p><b>Level:</b> Beginner</p>
+            <p><b>Duration:</b> 5 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>🔐 Cybersecurity Basics</h3>
+            <p>Learn digital safety, security principles and safe computing.</p>
+            <p><b>Level:</b> Foundation</p>
+            <p><b>Duration:</b> 6 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+        <div class="card">
+            <h3>☁️ Cloud Computing</h3>
+            <p>Understand cloud services, storage and computing concepts.</p>
+            <p><b>Level:</b> Foundation</p>
+            <p><b>Duration:</b> 8 Weeks</p>
+            <a href="#register" class="btn">Enroll Now</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Develop Essential Technical and Professional Skills</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Problem-Solving Skills</h3>
+            <p>Practise breaking complex problems into smaller steps.</p>
+        </div>
+
+        <div class="card">
+            <h3>Logical Thinking</h3>
+            <p>Improve reasoning through programming exercises.</p>
+        </div>
+
+        <div class="card">
+            <h3>Communication Skills</h3>
+            <p>Build confidence in explaining ideas and presenting projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Development</h3>
+            <p>Apply course concepts to practical learning projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Interview Preparation</h3>
+            <p>Practise technical questions and common interview topics.</p>
+        </div>
+
+        <div class="card">
+            <h3>Career Readiness</h3>
+            <p>Understand technical career paths and skill requirements.</p>
+        </div>
+    </div>
+</section>
+
+<section id="learning">
+    <h2>Our Student Learning Process and Academic Support</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Step 1: Choose Your Course</h3>
+            <p>Select a learning program that matches your interests.</p>
+        </div>
+
+        <div class="card">
+            <h3>Step 2: Register Online</h3>
+            <p>Fill in the registration form with your basic details.</p>
+        </div>
+
+        <div class="card">
+            <h3>Step 3: Study the Lessons</h3>
+            <p>Learn the concepts and practise examples regularly.</p>
+        </div>
+
+        <div class="card">
+            <h3>Step 4: Attend Practice Tests</h3>
+            <p>Answer MCQs and check your knowledge.</p>
+        </div>
+
+        <div class="card">
+            <h3>Step 5: Review Your Marks</h3>
+            <p>Check your score and identify topics for revision.</p>
+        </div>
+
+        <div class="card">
+            <h3>Step 6: Improve Your Skills</h3>
+            <p>Continue practising and building your technical knowledge.</p>
+        </div>
+    </div>
+</section>
+
+<section id="faculty">
+    <h2>Meet Our Faculty and Academic Mentoring Team</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Programming Instructor</h3>
+            <p>Focus: Python, C and Java fundamentals.</p>
+            <p>Support: Coding practice and debugging concepts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development Instructor</h3>
+            <p>Focus: HTML, CSS and JavaScript.</p>
+            <p>Support: Website structure and design principles.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Science Mentor</h3>
+            <p>Focus: Statistics, data analysis and visualisation.</p>
+            <p>Support: Understanding datasets and analytical thinking.</p>
+        </div>
+    </div>
+    <p class="small" style="margin-top:12px">
+        Note: Faculty profiles above are sample descriptions for this demo website.
+    </p>
+</section>
+
+<section id="register">
+    <h2>Student Registration Form for Online Coaching Classes</h2>
+    <p class="intro">
+        Enter your details and select your preferred course.
+        This demonstration form displays the submitted details on this page.
+    </p>
+
+    <form id="registrationForm">
+        <label for="studentName">Full Name</label>
+        <input id="studentName" type="text" placeholder="Enter your full name" required>
+
+        <label for="studentEmail">Email Address</label>
+        <input id="studentEmail" type="email" placeholder="Enter your email" required>
+
+        <label for="studentPhone">Phone Number</label>
+        <input id="studentPhone" type="tel" placeholder="Enter your phone number" required>
+
+        <label for="studentCourse">Select Your Course</label>
+        <select id="studentCourse" required>
+            <option value="">Choose a course</option>
+            <option>Python Programming</option>
+            <option>Java Programming</option>
+            <option>C Programming</option>
+            <option>C++ Programming</option>
+            <option>HTML and CSS</option>
+            <option>JavaScript Development</option>
+            <option>Artificial Intelligence</option>
+            <option>Data Science</option>
+            <option>Machine Learning</option>
+            <option>Database Management</option>
+            <option>Cybersecurity Basics</option>
+            <option>Cloud Computing</option>
+        </select>
+
+        <label for="studentLevel">Current Education Level</label>
+        <select id="studentLevel" required>
+            <option value="">Choose your level</option>
+            <option>School Student</option>
+            <option>Diploma Student</option>
+            <option>Undergraduate Student</option>
+            <option>Postgraduate Student</option>
+            <option>Working Professional</option>
+            <option>Other</option>
+        </select>
+
+        <label for="studentGoal">Learning Goal</label>
+        <textarea id="studentGoal" rows="3" placeholder="What do you want to learn?"></textarea>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Clear Form</button>
+
+        <div id="registrationResult" class="highlight" hidden></div>
+    </form>
+</section>
+
+<section id="test">
+    <h2>Online Programming Mock Test and Assessment Centre</h2>
+
+    <div class="highlight">
+        <h3>Test Instructions</h3>
+        <p>1. Read every question carefully.</p>
+        <p>2. Select one answer for each question.</p>
+        <p>3. Each correct answer carries 1 mark.</p>
+        <p>4. There are 10 questions for a total of 10 marks.</p>
+        <p>5. Click Submit Test to calculate your score.</p>
+        <p>6. This is a practice test, not an official examination.</p>
+    </div>
+
+    <form id="quizForm">
+
+        <div class="question">
+            <h3>1. Which language is commonly used for AI programming?</h3>
+            <label><input type="radio" name="q1" value="a"> HTML</label>
+            <label><input type="radio" name="q1" value="b"> Python</label>
+            <label><input type="radio" name="q1" value="c"> CSS</label>
+            <label><input type="radio" name="q1" value="d"> XML</label>
+        </div>
+
+        <div class="question">
+            <h3>2. What does HTML stand for?</h3>
+            <label><input type="radio" name="q2" value="a"> Hyper Text Markup Language</label>
+            <label><input type="radio" name="q2" value="b"> High Transfer Machine Language</label>
+            <label><input type="radio" name="q2" value="c"> Home Tool Markup Language</label>
+            <label><input type="radio" name="q2" value="d"> Hyperlink Text Management Language</label>
+        </div>
+
+        <div class="question">
+            <h3>3. Which HTML tag creates a paragraph?</h3>
+            <label><input type="radio" name="q3" value="a"> &lt;h1&gt;</label>
+            <label><input type="radio" name="q3" value="b"> &lt;img&gt;</label>
+            <label><input type="radio" name="q3" value="c"> &lt;p&gt;</label>
+            <label><input type="radio" name="q3" value="d"> &lt;table&gt;</label>
+        </div>
+
+        <div class="question">
+            <h3>4. Which symbol is used for comments in Python?</h3>
+            <label><input type="radio" name="q4" value="a"> //</label>
+            <label><input type="radio" name="q4" value="b"> #</label>
+            <label><input type="radio" name="q4" value="c"> &lt;!-- --&gt;</label>
+            <label><input type="radio" name="q4" value="d"> **</label>
+        </div>
+
+        <div class="question">
+            <h3>5. Which data structure follows FIFO?</h3>
+            <label><input type="radio" name="q5" value="a"> Stack</label>
+            <label><input type="radio" name="q5" value="b"> Tree</label>
+            <label><input type="radio" name="q5" value="c"> Queue</label>
+            <label><input type="radio" name="q5" value="d"> Graph</label>
+        </div>
+
+        <div class="question">
+            <h3>6. What does CPU stand for?</h3>
+            <label><input type="radio" name="q6" value="a"> Central Processing Unit</label>
+            <label><input type="radio" name="q6" value="b"> Computer Personal Utility</label>
+            <label><input type="radio" name="q6" value="c"> Control Program User</label>
+            <label><input type="radio" name="q6" value="d"> Central Power Utility</label>
+        </div>
+
+        <div class="question">
+            <h3>7. Which language is used to style web pages?</h3>
+            <label><input type="radio" name="q7" value="a"> SQL</label>
+            <label><input type="radio" name="q7" value="b"> CSS</label>
+            <label><input type="radio" name="q7" value="c"> C</label>
+            <label><input type="radio" name="q7" value="d"> Python</label>
+        </div>
+
+        <div class="question">
+            <h3>8. Which SQL command retrieves records?</h3>
+            <label><input type="radio" name="q8" value="a"> DELETE</label>
+            <label><input type="radio" name="q8" value="b"> DROP</label>
+            <label><input type="radio" name="q8" value="c"> SELECT</label>
+            <label><input type="radio" name="q8" value="d"> UPDATE</label>
+        </div>
+
+        <div class="question">
+            <h3>9. What is the full form of AI?</h3>
+            <label><input type="radio" name="q9" value="a"> Automated Internet</label>
+            <label><input type="radio" name="q9" value="b"> Artificial Intelligence</label>
+            <label><input type="radio" name="q9" value="c"> Advanced Input</label>
+            <label><input type="radio" name="q9" value="d"> Applied Interface</label>
+        </div>
+
+        <div class="question">
+            <h3>10. Which of these is a database management system?</h3>
+            <label><input type="radio" name="q10" value="a"> MySQL</label>
+            <label><input type="radio" name="q10" value="b"> HTML</label>
+            <label><input type="radio" name="q10" value="c"> CSS</label>
+            <label><input type="radio" name="q10" value="d"> JPEG</label>
+        </div>
+
+        <button type="submit">Submit Test & View Marks</button>
+        <button type="reset" id="resetQuiz">Restart Test</button>
+
+    </form>
+
+    <div id="result">
+        <h2>Your Practice Test Result</h2>
+        <h3 id="score"></h3>
+        <p id="percentage"></p>
+        <p id="grade"></p>
+        <p id="feedback"></p>
+        <p id="answersReview"></p>
+    </div>
+</section>
+
+<section id="results">
+    <h2>Student Assessment Results and Performance Improvement</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Instant Score Calculation</h3>
+            <p>View your practice test marks immediately after submission.</p>
+        </div>
+
+        <div class="card">
+            <h3>Percentage Calculation</h3>
+            <p>Understand your score as a percentage of the total marks.</p>
+        </div>
+
+        <div class="card">
+            <h3>Performance Feedback</h3>
+            <p>Use your practice results to identify topics for revision.</p>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <h3>Important Information About Test Results</h3>
+        <p>
+            The score shown on this website is calculated in your browser
+            for the current practice attempt. It is not automatically
+            stored in a teacher's account or a central student database.
+        </p>
+    </div>
+</section>
+
+<section id="schedule">
+    <h2>Weekly Learning Schedule and Practice Plan</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Monday — Introduction</h3>
+            <p>Learn new concepts and review the previous lesson.</p>
+        </div>
+
+        <div class="card">
+            <h3>Tuesday — Concept Practice</h3>
+            <p>Work through examples and short exercises.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wednesday — Coding Day</h3>
+            <p>Practise programming tasks and problem-solving.</p>
+        </div>
+
+        <div class="card">
+            <h3>Thursday — Revision</h3>
+            <p>Review notes and strengthen your understanding.</p>
+        </div>
+
+        <div class="card">
+            <h3>Friday — Mock Test</h3>
+            <p>Attempt practice questions and check your score.</p>
+        </div>
+
+        <div class="card">
+            <h3>Saturday — Weekly Review</h3>
+            <p>Identify mistakes and prepare for the next week.</p>
+        </div>
+    </div>
+
+    <p class="small" style="margin-top:12px">
+        This is a sample learning schedule, not a confirmed live class timetable.
+    </p>
+</section>
+
+<section id="fees">
+    <h2>Course Fee Information and Learning Plan Options</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Basic Learning Plan</h3>
+            <p>Suitable for beginners exploring a new subject.</p>
+            <p>Includes introductory learning content and practice.</p>
+            <p><b>Fee:</b> To be announced</p>
+        </div>
+
+        <div class="card">
+            <h3>Standard Learning Plan</h3>
+            <p>Designed for students seeking structured learning.</p>
+            <p>Includes lessons and practice assessments.</p>
+            <p><b>Fee:</b> To be announced</p>
+        </div>
+
+        <div class="card">
+            <h3>Advanced Learning Plan</h3>
+            <p>For learners seeking deeper technical practice.</p>
+            <p>Includes additional exercises and project guidance.</p>
+            <p><b>Fee:</b> To be announced</p>
+        </div>
+    </div>
+
+    <p class="small" style="margin-top:12px">
+        These are sample plans. Confirm actual fees and services before publishing.
+    </p>
+</section>
+
+<section id="certificate">
+    <h2>Certificate Programs and Skill Development Opportunities</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Programming Fundamentals</h3>
+            <p>Build a foundation in coding and logical thinking.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Design Fundamentals</h3>
+            <p>Explore the structure and styling of websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Science Fundamentals</h3>
+            <p>Discover basic data analysis and visualisation.</p>
+        </div>
+    </div>
+
+    <p class="highlight">
+        Certificate availability depends on the actual course provider.
+        This demo website does not issue official certificates.
+    </p>
+</section>
+
+<section id="faq">
+    <h2>Frequently Asked Questions About Our Online Courses</h2>
+
+    <div class="card">
+        <h3>1. How can I register for a course?</h3>
+        <p>Go to the registration section, fill in the required details and submit.</p>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+        <h3>2. Can I attend a practice test online?</h3>
+        <p>Yes. Use the online mock test section on this page.</p>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+        <h3>3. Will my marks be calculated automatically?</h3>
+        <p>Yes. The sample test calculates your marks in your browser.</p>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+        <h3>4. Will the teacher receive my registration?</h3>
+        <p>
+            Not with this demo alone. A backend or connected form service
+            is needed to send and store registration details.
+        </p>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+        <h3>5. Can I learn programming as a beginner?</h3>
+        <p>Yes. You can start with beginner-level programming courses.</p>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+        <h3>6. Are the course fees confirmed?</h3>
+        <p>No. The displayed fee information is a placeholder until you set actual prices.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Our Online Coaching Institute for More Information</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>📧 Email Support</h3>
+            <p>Send your questions by email.</p>
+            <a href="mailto:nachammaln583225243062@nprcolleges.org"
+               class="btn">Email Us</a>
+        </div>
+
+        <div class="card">
+            <h3>📱 Phone Support</h3>
+            <p>Contact number: 8807924051</p>
+            <a href="tel:8807924051" class="btn">Call Now</a>
+        </div>
+
+        <div class="card">
+            <h3>💬 WhatsApp Support</h3>
+            <p>Ask about courses and registration.</p>
+            <a href="https://wa.me/918807924051"
+               target="_blank" rel="noopener" class="btn">Chat on WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <h3>Have Questions About Your Learning Journey?</h3>
+        <p>
+            Contact us to learn more about course options, learning
+            schedules and registration requirements.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <h2 style="color:white">Bright Future Online Academy</h2>
+    <p>Learn More • Practise More • Achieve More</p>
+    <p>Email: nachammaln583225243062@nprcolleges.org</p>
+    <p>Phone: 8807924051</p>
+    <p>WhatsApp: 8807924051</p>
+    <p style="margin-top:15px">
+        © <span id="year"></span> Bright Future Online Academy.
+        Demo Website.
+    </p>
+    <p class="small" style="color:#dbeafe">
+        Replace sample institute details with your verified information before publishing.
+    </p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("studentName").value.trim();
+    const email = document.getElementById("studentEmail").value.trim();
+    const course = document.getElementById("studentCourse").value;
+    const level = document.getElementById("studentLevel").value;
+    const output = document.getElementById("registrationResult");
+
+    output.replaceChildren();
+
+    const heading = document.createElement("h3");
+    heading.textContent = "Registration Details Submitted";
+    output.appendChild(heading);
+
+    [
+        "Name: " + name,
+        "Email: " + email,
+        "Course: " + course,
+        "Education Level: " + level,
+        "Note: This demo displays your details only. They have not been sent to the institute."
+    ].forEach(function(message) {
+        const paragraph = document.createElement("p");
+        paragraph.textContent = message;
+        output.appendChild(paragraph);
+    });
+
+    output.hidden = false;
+});
+
+const correctAnswers = {
+    q1: "b",
+    q2: "a",
+    q3: "c",
+    q4: "b",
+    q5: "c",
+    q6: "a",
+    q7: "b",
+    q8: "c",
+    q9: "b",
+    q10: "a"
+};
+
+document.getElementById("quizForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let score = 0;
+    let unanswered = 0;
+    const total = Object.keys(correctAnswers).length;
+
+    for (const question in correctAnswers) {
+        const selected = document.querySelector(
+            'input[name="' + question + '"]:checked'
+        );
+
+        if (!selected) {
+            unanswered++;
+        } else if (selected.value === correctAnswers[question]) {
+            score++;
+        }
+    }
+
+    if (unanswered > 0) {
+        const proceed = confirm(
+            "You have " + unanswered +
+            " unanswered question(s). Submit your test anyway?"
+        );
+
+        if (!proceed) return;
+    }
+
+    const percentage = Math.round((score / total) * 100);
+
+    let grade;
+    let feedback;
+
+    if (percentage >= 90) {
+        grade = "Excellent";
+        feedback = "Outstanding practice performance!";
+    } else if (percentage >= 70) {
+        grade = "Very Good";
+        feedback = "Good work. Keep practising!";
+    } else if (percentage >= 50) {
+        grade = "Good Attempt";
+        feedback = "Revise the incorrect answers and try again.";
+    } else {
+        grade = "Needs More Practice";
+        feedback = "Review the fundamentals and attempt the test again.";
+    }
+
+    document.getElementById("score").textContent =
+        "Marks: " + score + " / " + total;
+
+    document.getElementById("percentage").textContent =
+        "Percentage: " + percentage + "%";
+
+    document.getElementById("grade").textContent =
+        "Performance: " + grade;
+
+    document.getElementById("feedback").textContent = feedback;
+
+    document.getElementById("answersReview").textContent =
+        "Correct answers: " + score +
+        " | Incorrect or unanswered: " + (total - score);
+
+    document.getElementById("result").style.display = "block";
+
+    document.getElementById("result").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
+
+document.getElementById("resetQuiz").addEventListener("click", function() {
+    document.getElementById("result").style.display = "none";
+});
+</script>
+
+</body>
+</html>
